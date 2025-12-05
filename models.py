@@ -7,11 +7,6 @@ engine = create_engine("sqlite:///freebies.db")
 Session = sessionmaker(bind=engine)
 session = Session()
 
-
-# ---------------------------
-# MODELS
-# ---------------------------
-
 class Company(Base):
     __tablename__ = "companies"
 
